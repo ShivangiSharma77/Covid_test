@@ -69,10 +69,11 @@
                 <div class="form-group"> 
                     <span class="input-group-btn">
                     <span class="btn btn-primary btn-file">
-                         <input type="file" id="fileupload" name="file" multiple>
+                         <input type="file" id="image" name="file" multiple accept="image/*">
                     </span>
                     </span>
                     <!-- <input type="text" class="form-control" readonly> -->
+                    <br>Press ctrl while selecting multiple images 
                 </div>
             </fieldset>
             <div class="form-group">
@@ -82,7 +83,7 @@
     </div>
     <!-- <div class="border-top pt-3">
         <small class="text-muted">
-            Already Have An Account? <a class="ml-2" href="{{ url_for('login') }}">Sign In</a>
+            Press ctrl <a class="ml-2" href="{{ url_for('login') }}">Sign In</a>
         </small>
     </div> -->
     
