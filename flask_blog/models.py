@@ -8,5 +8,5 @@ class User(db.Model):
     # password= db.Column(db.String(60))
 
     def __repr__(self):
-        return ("User is - %s , Email is - %s " %(self.username, self.email))
+        return ("User is - %s , Email is - %s, image_file is - %s" %(self.username, self.email, self.image_file))
         
