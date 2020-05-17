@@ -25,7 +25,7 @@ def home():
         db.session.add(user)
         db.session.commit()
         flash('Information Submitted', category='success')
-        return redirect(url_for('home'))
+        return redirect(url_for('result'))
     return render_template('home.html', title= 'Covid-19',form=form)
     
 
@@ -45,3 +45,7 @@ def register():
 def login():
     form = LoginForm()
     return render_template('login.html', title= 'Login',form=form)
+
+@app.route('/result')
+def result():
+    return render_template('result.html', title= 'results')
