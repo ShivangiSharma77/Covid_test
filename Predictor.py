@@ -23,6 +23,7 @@ def classifier(result):
     else:
         print('covid')
 
+
 # ### Predict
 test_image=process(test_image)
 result = classifier(model.predict(test_image))
