@@ -31,5 +31,5 @@ class RForm(FlaskForm):
     # # validators=[DataRequired()])
     confirm_password = PasswordField('Confirm Password')
                                     #  validators=[DataRequired(), EqualTo('password')])
-    picture = FileField('Image',validators=[FileRequired(), FileAllowed(['jpg', 'png'])])
+    picture = FileField('Image',validators=[FileRequired(), FileAllowed(['jpg', 'png', 'gif', 'jpeg'])])
     submit = SubmitField('Submit')
